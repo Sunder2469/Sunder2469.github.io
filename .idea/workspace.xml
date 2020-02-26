@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/dino.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/fox.glb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera.html" beforeDir="false" afterPath="$PROJECT_DIR$/camera.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/CesiumMan.glb" beforeDir="false" afterPath="$PROJECT_DIR$/models/CesiumMan.glb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animated.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aframe-ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aframe.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <workItem from="1581366570751" duration="5741000" />
       <workItem from="1581406723602" duration="207000" />
       <workItem from="1582191218614" duration="395000" />
-      <workItem from="1582700321503" duration="9274000" />
+      <workItem from="1582700321503" duration="12658000" />
     </task>
     <servers />
   </component>
@@ -86,5 +85,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="167" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582708913850" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1582711662350">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1582711662350" />
   </component>
 </project>
