@@ -1,9 +1,12 @@
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
+<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
 <script src="https://google-ar.github.io/three.ar.js/dist/three.ar.js"></script>
 <script src="https://rawgit.com/chenzlabs/aframe-ar/827e9db/dist/aframe-ar.min.js"></script>
-<body>
+<body style='margin : 0px; overflow: hidden;'>
 <a-scene embedded arjs>
     <a-assets>`
         <a-asset id="cesium-man" src="models/CesiumMan.glb"></a-asset>
