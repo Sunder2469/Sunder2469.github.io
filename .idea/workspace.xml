@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="" />
+    <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/models/dino.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/fox.glb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera.html" beforeDir="false" afterPath="$PROJECT_DIR$/camera.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/CesiumMan.glb" beforeDir="false" afterPath="$PROJECT_DIR$/models/CesiumMan.glb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cirrus-r" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -39,6 +45,7 @@
       <recent name="$PROJECT_DIR$/css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/patterns" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/gifs" />
@@ -59,7 +66,7 @@
       <workItem from="1581366570751" duration="5741000" />
       <workItem from="1581406723602" duration="207000" />
       <workItem from="1582191218614" duration="395000" />
-      <workItem from="1582700321503" duration="8616000" />
+      <workItem from="1582700321503" duration="9274000" />
     </task>
     <servers />
   </component>
