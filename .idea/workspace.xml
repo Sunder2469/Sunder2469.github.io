@@ -4,8 +4,6 @@
     <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animated.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aframe-ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aframe.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1581366570751" duration="5741000" />
       <workItem from="1581406723602" duration="207000" />
       <workItem from="1582191218614" duration="395000" />
-      <workItem from="1582700321503" duration="12658000" />
+      <workItem from="1582700321503" duration="13301000" />
     </task>
     <servers />
   </component>
