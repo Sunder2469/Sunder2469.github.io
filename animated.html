@@ -1,76 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Web AR Experiment</title>
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-    <script src="https://google-ar.github.io/three.ar.js/dist/three.ar.js"></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
-    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/cfe5f316/dist/aframe-extras.js"></script>
-    <script type="text/javascript">
-        AFRAME.registerComponent('shadow-material', {
-            init() {
-                this.material = new THREE.ShadowMaterial();
-                this.el.getOrCreateObject3D('mesh').material = this.material;
-                this.material.opacity = 0.3;
-            }
-        });
-    </script>
-    <style> * { -webkit-tap-highlight-color: rgba(0,0,0,0); } </style>
-</head>
+<!doctype HTML>
+<html>
+<script src="js/aframe.js"></script>
+<script src="js/aframe-ar.js"></script>
+<script src="js/three.ar.js"></script>
+<script src="js/aframe-extras.js"></script>
 
-<body>
+<body style='margin : 0px; overflow: hidden;'>
 <a-scene embedded arjs>
-    <a-camera ar-raycaster raycaster="objects: [data-raycastable]" cursor="fuse:false"></a-camera>
-    <a-assets>
-        <a-asset id="cesium-man" src="models/CesiumMan.glb"></a-asset>
+    <a-camera ar-raycaster raycaster cursor="fuse:false"></a-camera>
+    <a-assets>`
+        <a-asset id="car" src="models/Ferrari.glb"></a-asset>
     </a-assets>
-    <a-entity id="walker">
-        <a-entity gltf-model="#cesium-man" scale="0.15 0.15 0.15" rotation="0 -90 0" animation-mixer
-                  shadow="cast: true">
-        </a-entity>
-        <a-plane width="0.5" height="0.5" position="0 0 0" rotation="-90 0 0"
-                 color="white" shadow="receive: true" shadow-material></a-plane>
+    <a-entity id="walker" gltf-model="#car" position="0 1 -5" scale="1 1 1">
     </a-entity>
-    <a-ring id="cursor" color="teal" radius-inner="0.02" radius-outer="0.03" position="0 -3 -3" rotation="-90 0 0"></a-ring>
+    <a-ring id="cursor" radius-inner="0.2" radius-outer="0.3" color="teal" position="0 0.8 -5" rotation="-90 0 0">
+    </a-ring>
 </a-scene>
 
 <script type="text/javascript">
-    const raycaster = document.querySelector('[ar-raycaster]');
-    const cursor = document.querySelector('#cursor');
-    function onSceneLoaded() {
+    var raycaster = new THREE.Raycaster();
+    console.log(raycaster);
+    var mouse = new THREE.Vector2();
 
-        raycaster.addEventListener('raycaster-intersection', (event) => {
-            cursor.setAttribute('position', event.detail.intersections[0].point);
-        });
-
-        const walker = document.querySelector('#walker');
-        const { stringify } = AFRAME.utils.coordinates;
-
-        let firstTime = true;
-        raycaster.addEventListener('click', () => {
-            const target = raycaster.components.cursor.intersection.point;
-
-            if (firstTime) {
-                walker.setAttribute('position', target);
-                firstTime = false;
-            } else {
-                const currentPosition = walker.object3D.position;
-                const distance = currentPosition.distanceTo(target);
-
-                walker.object3D.lookAt(target);
-
-                const animation = document.createElement('a-animation');
-                animation.setAttribute('attribute', 'position');
-                animation.setAttribute('to', stringify(target));
-                animation.setAttribute('dur', distance * 7000);
-                animation.setAttribute('easing', 'linear');
-                walker.appendChild(animation);
-            }
-        });
+    function onMouseMove(event) {
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
     }
 
-    const scene = document.querySelector('a-scene');
-    scene.addEventListener('loaded', onSceneLoaded);
+    function render() {
+
+        raycaster.setFromCamera(mouse, camera);
+
+        var intersects = raycaster.intersectObjects(scene.children);
+
+        for (var i = 0; i < intersects.length; i++) {
+            intersects[i].object.material.color.set(0xff0000);
+        }
+
+        renderer.render(scene, camera);
+
+    }
+
+    window.addEventListener('mousemove', onMouseMove, false);
+
+    window.requestAnimationFrame(render);
 </script>
 </body>
+
 </html>
