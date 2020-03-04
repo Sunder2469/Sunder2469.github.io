@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animated.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera.html" beforeDir="false" afterPath="$PROJECT_DIR$/camera.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aframe.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/aframe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +32,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js-test" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/patterns" />
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/patterns" />
-      <recent name="$PROJECT_DIR$/img" />
-      <recent name="$PROJECT_DIR$/gifs" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -60,7 +60,9 @@
       <workItem from="1581406723602" duration="207000" />
       <workItem from="1582191218614" duration="395000" />
       <workItem from="1582700321503" duration="17498000" />
-      <workItem from="1583219440239" duration="5991000" />
+      <workItem from="1583219440239" duration="10821000" />
+      <workItem from="1583262800818" duration="9118000" />
+      <workItem from="1583305914744" duration="2000" />
     </task>
     <servers />
   </component>
@@ -68,14 +70,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="357" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582705267541">
+    <state x="670" y="357" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583263997200">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="670" y="357" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582705267541" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582704589567">
+    <state x="670" y="357" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583263997200" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583270056744">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1582704589567" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583270056744" />
     <state x="167" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583225755298">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
