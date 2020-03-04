@@ -4,6 +4,7 @@
     <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animated.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopify.html" beforeDir="false" afterPath="$PROJECT_DIR$/shopify.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -39,11 +40,11 @@
       <recent name="$PROJECT_DIR$/css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js-test" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/patterns" />
-      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -65,7 +66,7 @@
       <workItem from="1583219440239" duration="10821000" />
       <workItem from="1583262800818" duration="9118000" />
       <workItem from="1583305914744" duration="2000" />
-      <workItem from="1583306447642" duration="7106000" />
+      <workItem from="1583306447642" duration="11500000" />
     </task>
     <servers />
   </component>
