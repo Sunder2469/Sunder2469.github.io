@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link type="text/css" rel="stylesheet" href="main.css">
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/chenzlabs/aframe-ar/0cf8d5a/dist/aframe-ar.min.js"></script>
 </head>
 
 <body>
-<div id="container"></div>
 <script type="module">
 
     import * as THREE from '../build/three.module.js';
@@ -42,7 +43,7 @@
 
     function onload() {
 
-        container = document.getElementById( 'container' );
+        container = document.body;
 
         renderer = new THREE.WebGLRenderer( { antialias: true } );
         renderer.setPixelRatio( window.devicePixelRatio );
@@ -53,12 +54,8 @@
 
         window.addEventListener( 'resize', onWindowResize, false );
 
-        // Load background and generate envMap
-
-
         initScene( scenes[ state.scene ] );
         animate();
-
 
         var pmremGenerator = new THREE.PMREMGenerator( renderer );
         pmremGenerator.compileEquirectangularShader();

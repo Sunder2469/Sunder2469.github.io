@@ -1,54 +1,35 @@
 <!doctype HTML>
 <html>
 <script src="js/aframe.js"></script>
-<script src="js/aframe-ar.js"></script>
 <script src="js/three.ar.js"></script>
+<script src="js/aframe-ar.js"></script>
 <script src="js/aframe-extras.js"></script>
-
-<body style='margin : 0px; overflow: hidden;'>
-<a-scene embedded arjs>
-    <a-camera ar-raycaster raycaster cursor="fuse:false"></a-camera>
-    <a-assets>`
-        <a-asset id="car" src="models/Ferrari.glb"></a-asset>
+<body>
+<a-scene embeded arjs>
+    <a-camera ar-raycaster raycaster cursor="fuse:false"> </a-camera>
+    <a-assets>
+        <a-asset id="cesium-man" src="models/gltf/CesiumMan/glTF/CesiumMan.gltf"></a-asset>
     </a-assets>
-    <a-entity id="walker" gltf-model="#car" position="0 1 -5" scale="1 1 1">
+    <a-entity id="walker" gltf-model="#cesium-man" position="0 0 -5" scale="0.5 0.5 0.5" animation-mixer>
     </a-entity>
-    <a-ring id="cursor" radius-inner="0.2" radius-outer="0.3" color="teal" position="0 0.8 -5" rotation="-90 0 0">
+    <a-ring id="cursor" radius-inner="0.1" radius-outer="0.2"
+            color="teal" position="0 -0.8 -5" rotation="-90 0 0">
     </a-ring>
+
 </a-scene>
 
 <script type="text/javascript">
-    let raycaster = new THREE.Raycaster();
-    let mouse = new THREE.Vector2();
-    let camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 5000);
-    let scene = new THREE.Scene();
-
-    function onMouseMove(event) {
-        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    function onSceneLoaded() {
+        const raycaster = document.querySelector('[ar-raycaster]');
+        const cursor = document.querySelector('#cursor');
+        raycaster.addEventListener('raycaster-intersection', (event) => {
+            cursor.setAttribute('position', event.detail.intersections[0].point);
+        });
     }
 
-    function render() {
-
-        raycaster.setFromCamera(mouse, camera);
-
-        var intersects = raycaster.intersectObjects(scene.children);
-
-        for (var i = 0; i < intersects.length; i++) {
-            intersects[i].object.material.color.set(0xff0000);
-        }
-        renderer = new THREE.WebGLRenderer( { antialias: true } );
-        renderer.setPixelRatio( window.devicePixelRatio );
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        renderer.outputEncoding = THREE.sRGBEncoding;
-        renderer.physicallyCorrectLights = true;
-        renderer.render(scene, camera);
-
-    }
-
-    window.addEventListener('mousemove', onMouseMove, false);
-
-    window.requestAnimationFrame(render);
+    const scene = document.querySelector('a-scene');
+    scene.addEventListener('loaded', onSceneLoaded);
+    
 </script>
 </body>
 
