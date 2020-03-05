@@ -33,8 +33,8 @@
 
         let firstTime = true;
         raycaster.addEventListener('click', () => {
-            const target = raycaster.components.cursor.intersection.point;
-
+            const target = raycaster.components.cursor.intersection.first().point;
+            console.log(target);
             if (firstTime) {
                 walker.setAttribute('position', target);
                 firstTime = false;
@@ -48,9 +48,6 @@
             }
         });
     }
-
-
-
     const scene = document.querySelector('a-scene');
     scene.addEventListener('loaded', onSceneLoaded);
 
