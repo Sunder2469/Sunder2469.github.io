@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63b11e59-65d2-4a82-a7c1-3ce6b151890b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animated.html" beforeDir="false" afterPath="$PROJECT_DIR$/animated.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +26,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,7 +66,10 @@
       <workItem from="1583305914744" duration="2000" />
       <workItem from="1583306447642" duration="13151000" />
       <workItem from="1583344321118" duration="4773000" />
-      <workItem from="1583392095599" duration="1276000" />
+      <workItem from="1583392095599" duration="2013000" />
+      <workItem from="1583516945776" duration="125000" />
+      <workItem from="1584431092665" duration="31000" />
+      <workItem from="1584527310883" duration="1285000" />
     </task>
     <servers />
   </component>
@@ -78,10 +81,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="670" y="357" width="636" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1583307194297" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583307566822">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584431119624">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583307566822" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584431119624" />
     <state x="167" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583225755298">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
